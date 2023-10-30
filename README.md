@@ -8,10 +8,10 @@
 
     perl
 
- my-ansible-repo/
+ **my-ansible-repo/
 ├── inventory/
 │   ├── hosts
-└── playbook.yml
+└── playbook.yml**
 
 # Access the GitHub Repository:
 
@@ -23,13 +23,13 @@ To work with the files in your Ansible playbook and inventory, you can clone the
 
 bash
 
- git clone <repository_url>
+ **git clone <repository_url>**
 
 # For example:
 
 bash
 
- git clone https://github.com/yourusername/my-ansible-repo.git
+ **git clone https://github.com/yourusername/my-ansible-repo.git**
 
 # Edit Playbook and Inventory:
 
@@ -41,9 +41,9 @@ Once you've made changes to your playbook or inventory, you can commit the chang
 
 bash
 
- git add .
+**git add .
  git commit -m "Updated playbook and inventory"
- git push
+ git push**
 
 # Run Ansible Playbook:
 
@@ -51,7 +51,7 @@ To run your Ansible playbook from the cloned repository on your local machine, u
 
 bash
 
-   ansible-playbook -i inventory/hosts playbook.yml
+  **ansible-playbook -i inventory/hosts playbook.yml**
 
     This command specifies the inventory file and playbook to run. It will execute the tasks defined in your playbook.
 
