@@ -16,10 +16,10 @@ This playbook is designed for an environment where an AWS EC2 instance is used a
 
 Ensure that Ansible is installed on your local machine. You can install it using your package manager.
 
-bash
+
 # For example, on Ubuntu
-sudo apt update
-sudo apt install ansible
+**sudo apt update
+sudo apt install ansible**
 
 # AWS EC2 Instance Setup
 
@@ -38,7 +38,7 @@ In the inventory file, define a group named [webserver] to specify the target ho
 ini
 
 [webserver]
-ec2-instance-public-ip ansible_ssh_private_key_file=/path/to/your/aws-ssh-key.pem
+**ec2-instance-public-ip ansible_ssh_private_key_file=/path/to/your/aws-ssh-key.pem**
 
 Replace ec2-instance-public-ip with the actual IP or DNS of your EC2 instance and provide the correct path to your AWS SSH key.
 Playbook Explanation
@@ -67,9 +67,8 @@ Make sure your SSH private key is correctly configured in the inventory file and
 
 Use the ansible-playbook command to run the playbook, specifying the inventory file and playbook name. For example:
 
-bash
 
-ansible-playbook -i inventory.ini playbook1.yml
+**ansible-playbook -i inventory.ini playbook1.yml**
 
 # Reviewing the Playbook Output
 
